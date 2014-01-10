@@ -1,0 +1,22 @@
+p = 1
+n = input('choose an integer: ')
+x = input('choose a number between 2 and 9 to muptiply by: ')
+
+if x >= 2 and x <= 9:
+    y = p * x
+    counter = 0
+    while y < n:
+        counter = counter + 1
+        y = p * x
+        p = y   
+
+    if counter%2 == 0:
+        print 'jason wins'
+    else:
+        print 'alex wins'
+else:
+    print 'NO'
+
+#1*2*2 >3
+#1*2*2*2 >7
+    
